@@ -1,5 +1,5 @@
 const mongoose=require("mongoose")
-const Schame= mongoose.Schema
+const Schema= mongoose.Schema
 
 const Categoria= new Schema({
     nome: {
@@ -18,4 +18,5 @@ const Categoria= new Schema({
     }
 })
 
-mongoose.model=("categorias", Categoria)
+
+module.exports= mongoose.model("Categorias", Categoria)
